@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  dead-drop:
+    build: .
+    image: rbdr/dead-drop
+    entrypoint:
+      - 'node'
+      - 'node_modules/.bin/eslint'
+      - '.'
+      - '--max-warnings'
+      - '0'

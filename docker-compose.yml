@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  dead-drop:
+    build: .
+    env_file: .env
+    image: rbdr/dead-drop
+    ports:
+      - "1988:1988"
