@@ -16,7 +16,7 @@ const internals = {};
  * connect to the redis server
  */
 module.exports = internals.Config = {
-  port: Getenv.int('DEAD_DROP_PORT', 1988)
+  port: Getenv.int('DEAD_DROP_PORT', 1988),
 
   /**
    * Information required to connect to the redis server
