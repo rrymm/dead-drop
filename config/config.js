@@ -29,5 +29,5 @@ module.exports = internals.Config = {
   redis: {
     host: Getenv('DEAD_DROP_REDIS_HOST'),
     port: Getenv.int('DEAD_DROP_REDIS_PORT', 6379)
-  },
+  }
 };
