@@ -41,7 +41,11 @@ You can also do some other operations
 
 ## Setting up Twilio
 
-TBD
+Get a twilio number, and on the configuration set the voice settings to
+"Webhooks/TwiML" and point the `A call comes in` hook to:
+the `/menus/main/` path of your dead drop installation. For example: 
+`https://dead-drop.unlimited.piza/menus/main`. It must be accessible
+from the internet.
 
 ## Checking the code
 
