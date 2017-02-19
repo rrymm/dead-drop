@@ -12,11 +12,13 @@ const internals = {};
  * @memberof DeadDrop
  * @typedef {object} tConfiguration
  * @property {number} [port=1988] the port where the app will listen on
+ * @property {string} twilioAccountSid the twilio account sid used to authorize calls
  * @property {DeadDrop.tRedisConfiguration} redis the configuration to
  * connect to the redis server
  */
 module.exports = internals.Config = {
   port: Getenv.int('DEAD_DROP_PORT', 1988),
+  twilioAccountSid: Getenv('DEAD_DROP_TWILIO_ACCOUNT_SID'),
 
   /**
    * Information required to connect to the redis server
