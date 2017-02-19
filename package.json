@@ -1,0 +1,35 @@
+{
+  "name": "dead-drop",
+  "version": "1.0.0",
+  "description": "A voice communication system",
+  "main": "lib/dead_drop.js",
+  "repository": "git@github.com:rbdr/dead-drop.git",
+  "author": "Ben Beltran <ben@nsovocal.com>",
+  "license": "BSD 2-Clause",
+  "bin": {
+    "dead-drop": "./bin/dead_drop.js"
+  },
+  "scripts": {
+    "document": "jsdoc -c ./config/jsdoc.json lib config",
+    "lint": "eslint .",
+    "start": "node ./bin/dead_drop.js",
+    "test": "echo \"Error: no test specified... sorry D:\""
+  },
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "eslint": "^3.15.0",
+    "eslint-config-hapi": "^10.0.0",
+    "eslint-plugin-hapi": "^4.0.0",
+    "jsdoc": "^3.4.3"
+  },
+  "dependencies": {
+    "getenv": "^0.7.0",
+    "joi": "^10.2.2",
+    "koa": "^1.2.5",
+    "koa-bodyparser": "^2.3.0",
+    "koa-route": "^2.4.2",
+    "pify": "^2.3.0",
+    "redis": "^2.6.5",
+    "twilio": "^2.11.1"
+  }
+}

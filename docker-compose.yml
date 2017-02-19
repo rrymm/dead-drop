@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  dead-drop:
+    build: .
+    env_file: .env
+    image: rbdr/dead-drop
+    environment:
+      - DEAD_DROP_REDIS_HOST=db
+    ports:
+      - "1988:1988"
+    depends_on:
+      - db
+  db:
+    image: redis:3.2.6
