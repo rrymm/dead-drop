@@ -9,7 +9,9 @@ the file in `config/env.dist` to `.env` in the project root and override
 the values.
 
 When running with `make run`, it'll pick up these values automatically.
-If you're doing it the hard way, you'll have to source them.
+If you're doing it the hard way, you'll have to source them. You must
+set the `DEAD_DROP_ACCOUNT_SID` to match your account sid. This is so
+dead drop can filter out calls from other accounts.
 
 ## Running Locally
 
@@ -41,7 +43,14 @@ You can also do some other operations
 
 ## Setting up Twilio
 
-TBD
+Get a twilio number, and on the configuration set the voice settings to
+"Webhooks/TwiML" and point the `A call comes in` hook to:
+the `/menus/main/` path of your dead drop installation. For example: 
+`https://dead-drop.unlimited.piza/menus/main`. It must be accessible
+from the internet.
+
+You will also need your account sid. This is obtained from the "[Account
+Settings][account-settings]" area in the twilio dashboard.
 
 ## Checking the code
 
@@ -51,3 +60,4 @@ javascript style, and includes eslint configuration to check them. Run
 
 [docker]: https://www.docker.com/
 [hapi-style-guide]: https://hapijs.com/styleguide
+[account-settings]: https://www.twilio.com/console/account/settings
