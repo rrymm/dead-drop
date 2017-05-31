@@ -1,0 +1,43 @@
+body {
+  background-color: #85CCDA;
+}
+
+h1, .cta, .phone {
+  font-family: 'Bungee Shade', sans-serif;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 64pt;
+  color: #fff;
+  margin: 24px auto;
+}
+
+p, ul {
+  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #4C5F65;
+}
+
+.description {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.usage {
+  margin: 10px auto 50px;
+  width: 25%;
+}
+
+.phone {
+  font-size: 48pt;
+}
+
+.cta {
+  margin: 24px auto;
+  font-size: 48pt;
+  color: #fff;
+}
