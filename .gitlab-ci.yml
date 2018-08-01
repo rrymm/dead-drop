@@ -12,4 +12,5 @@ pages:
       - pages
   only:
     - master
+    - hotfix/1.0.1
 
